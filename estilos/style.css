@@ -31,7 +31,6 @@ section#login {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
   background-color: white;
   width: 250px;
@@ -40,6 +39,7 @@ section#login {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
   transition: width .4s, height .4s;
   transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 }
 
 section#login>div#imagem {
@@ -100,6 +100,17 @@ div.campo>label {
   display: none;
 }
 
+div.campo>input {
+  background-color: whitesmoke;
+  font-size: 1em;
+  width: calc(100% - 44px);
+  height: 100%;
+  border: 0px;
+  border-radius: 2px;
+  padding: 4px;
+  transform: translateY(-10px);
+}
+
 form>div.campo {
   background-color: #26142698;
   border-radius: 4px;
@@ -108,8 +119,9 @@ form>div.campo {
   height: 30px
 }
 
-form>div.campo>i {
-  font-size: 1.2em;
-  padding: 0% 5px;
-  margin: 1px 0;
+div.campo>i {
+  font-size: 2em;
+  padding: 5px;
+  width: 50px;
+  margin: -5px;
 }
